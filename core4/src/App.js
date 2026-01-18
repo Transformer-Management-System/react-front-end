@@ -1,12 +1,7 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Sidebar from "./components/Sidebar";
 import Tabs from "./components/Tabs";
-import TransformerList from "./components/TransformerList";
-import TransformerModal from "./components/TransformerModal";
-import InspectionList from "./components/InspectionList";
-import InspectionModal from "./components/InspectionModal";
-import InspectionViewModal from "./components/InspectionViewModal";
-import TransformerInspectionsPage from "./components/TransformerInspectionsPage";
+import TransformerList from "./components/TransformerList"; import TransformerModal from "./components/TransformerModal"; import InspectionList from "./components/InspectionList"; import InspectionModal from "./components/InspectionModal"; import InspectionViewModal from "./components/InspectionViewModal"; import TransformerInspectionsPage from "./components/TransformerInspectionsPage";
 import SettingsPage from "./components/SettingsPage";
 
 import "./App.css";
@@ -302,4 +297,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

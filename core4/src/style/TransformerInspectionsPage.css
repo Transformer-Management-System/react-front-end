@@ -1,0 +1,113 @@
+.add-inspection-btn {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-inspection-btn:hover {
+  background-color: rgb(0, 4, 250);
+}
+
+.back-btn {
+  background-color: #02090fff;
+  color: white;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: rgb(0, 4, 250);
+  color: white;
+}
+
+/* Table styles */
+.inspection-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.inspection-table th,
+.inspection-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.inspection-table thead tr {
+  background-color: #02090fff;
+  color: white;
+}
+
+/* Status labels */
+.status-label {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+.status-label.pending {
+  background-color: grey;
+}
+
+.status-label.in-progress {
+  background-color: orange;
+}
+
+.status-label.completed {
+  background-color: green;
+}
+
+
+/* Back button */
+.back-btn {
+  background-color: #555;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.back-btn:hover {
+  background-color: #333;
+}
+
+/* Action buttons */
+.inspection-btn {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.inspection-btn.view-btn {
+  background-color: black;
+  margin-right: 5px;
+}
+
+.inspection-btn.view-btn:hover {
+  background-color: rgb(0, 4, 250);
+}
+
+.inspection-btn.delete-btn {
+  background-color: black;
+}
+
+.inspection-btn.delete-btn:hover {
+  background-color: rgb(0, 4, 250);
+}

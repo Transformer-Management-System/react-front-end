@@ -1,0 +1,469 @@
+/* inspection view popup main styling */
+.modal-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-section {
+  flex: 1;
+  min-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.modal-section h3 {
+  margin-top: 0;
+}
+
+.modal-section:nth-child(2) {
+  background-color: #f5f5f5;
+}
+
+.workflow-step {
+  margin-bottom: 5px;
+}
+
+.workflow-bar {
+  width: 100%;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+.comparison-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  flex: 1;
+  text-align: center;
+}
+
+.image-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 450px; /* Increased width */
+  height: 450px; /* Increased height */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the image within the box */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-info {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  width: 420px;
+  margin: 8px auto 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #fafafa;
+}
+
+.image-info p {
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-info p strong {
+  color: #333;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: background 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+.blue-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.blue-btn:hover {
+  background-color: #0056b3;
+}
+
+.danger-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.danger-btn:hover {
+  background-color: #b02a37;
+}
+
+.analysis-btn {
+  background-color: #17a2b8; /* teal/blue */
+  color: white;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.analysis-btn:hover {
+  background-color: #117a8b;
+}
+
+.analysis-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.preview-card {
+  max-width: 50%;
+  max-height: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.weather-select {
+  margin-bottom: 10px;
+}
+
+.image-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0; 
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 85%;
+  max-height: 90%;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 10000;
+}
+
+.upload-weather-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.upload-weather-container label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* progress bar style */
+.modal-flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.modal-flex-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.progress-label {
+  font-weight: bold;
+  flex: 1;
+}
+
+.progress-status {
+  font-weight: bold;
+  width: 110px;
+}
+
+/* complete button style */
+.complete-button-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.inspection-complete-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.inspection-complete-btn:hover {
+  background-color: #218838;
+}
+
+.threshold-slider {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  background-color: #f0f2f5;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.threshold-slider label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #333;
+}
+
+.threshold-slider input[type="range"] {
+  width: 100%;
+}
+
+.annotation-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 1px 4px;
+  border-bottom-right-radius: 4px;
+  line-height: 1;
+}
+
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.log-table th,
+.log-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.log-table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+.log-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.log-table tbody tr:hover {
+  background-color: #e9f5ff; /* Light blue on hover */
+}
+
+.log-row-highlight {
+  background-color: #d4edff !important; /* Stronger highlight for JS-driven hover */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.log-comment-textarea {
+  width: 100%;
+  min-height: 50px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.zoom-slider-container {
+  margin-top: 12px;
+  padding: 8px;
+  background-color: #f0f2f5;
+  border-radius: 6px;
+  max-width: 800px;
+}
+
+.zoom-slider-container label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.zoom-slider-container input[type="range"] {
+  width: 100%;
+}
+
+/* Make the zoom viewer UI fit within the inspection image box */
+.image-box .annotated-wrap { padding: 6px; width: 100%; }
+.image-box .zoom-toolbar { margin-bottom: 4px; gap: 6px; }
+.image-box .zoom-toolbar .btn { padding: 3px 6px; }
+.image-box .zoom-toolbar .zoom-level { min-width: 36px; font-size: 11px; }
+.image-box .hint { display: none; }
+
+.inspection-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.inspection-save-btn, .inspection-cancel-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inspection-save-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.inspection-cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.severity-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.severity-badge.faulty {
+  background-color: #dc3545; /* Red */
+}
+
+.severity-badge.potentially-faulty {
+  background-color: #fd7e14; /* Orange */
+}
+
+.severity-badge.manual {
+  background-color: #007bff; /* Blue */
+}
+
+.severity-badge.normal {
+  background-color: #28a745; /* Green */
+}
+
+.drawing-box {
+  position: absolute;
+  border: 2px dashed #007bff;
+  background-color: rgba(0, 123, 255, 0.2);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.cancel-draw-btn {
+  background-color: #ffc107;
+  color: black;
+}
+.cancel-draw-btn:hover {
+  background-color: #e0a800;
+}
+
+.log-classification-select {
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* Print styles for Maintenance Record modal */
+@media print {
+  body * { visibility: hidden; }
+  .modal-card, .modal-card * { visibility: visible; }
+  .modal-card { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none; }
+}

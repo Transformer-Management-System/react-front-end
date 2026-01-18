@@ -1,0 +1,42 @@
+/* === TABS CONTAINER === */
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tabs-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* === TAB BUTTONS === */
+.tabs-button-row {
+  display: flex;
+  gap: 10px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+  background: #444;
+}
+
+.tab-button.active {
+  background: #0404fa;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

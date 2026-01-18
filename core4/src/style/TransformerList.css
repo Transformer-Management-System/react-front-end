@@ -1,0 +1,157 @@
+/* === ADD TRANSFORMER BUTTON === */
+.add-transformer-btn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.add-transformer-btn:hover {
+  background-color: rgb(0, 4, 250);
+}
+
+/* === TRANSFORMER TABLE === */
+.transformer-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.transformer-table th,
+.transformer-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-header {
+  background-color: black;
+  color: white;
+}
+
+/* Transformer Action Buttons */
+.transformer-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.transformer-actions button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.transformer-actions .view-btn,
+.transformer-actions .edit-btn,
+.transformer-actions .delete-btn {
+  background-color: black;
+}
+
+.transformer-actions button:hover {
+  background-color: rgb(0, 4, 250);
+}
+
+/* === SELECTED TRANSFORMER CARD === */
+.selected-transformer {
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #f0f8ff;
+  border: 2px solid #2b95dbff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between; /* image on right */
+  align-items: flex-start; /* top-align info card */
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap; /* allows responsive wrapping */
+}
+
+/* Info Card */
+.selected-transformer .selected-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+.selected-transformer .info-card {
+  background-color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 130px;
+  text-align: left;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* Selected Transformer Image */
+.selected-transformer .selected-image-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* title above image */
+  align-items: center;
+  justify-content: flex-start;
+  background: #f5f5f5;
+  flex-shrink: 0;
+  padding: 8px;
+  box-sizing: border-box;
+  gap: 8px; /* space between title and image */
+}
+
+.selected-transformer .selected-image-container .image-title {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  flex-shrink: 0; /* ensure title is never compressed */
+}
+
+.selected-transformer .selected-image-container .selected-image {
+  width: 100%;
+  flex-grow: 1; /* image fills remaining space */
+  object-fit: contain; /* ensures entire image is visible */
+  display: block;
+  border-radius: 8px;
+}
+
+/* Danger button styling */
+.selected-transformer button.danger-btn {
+  align-self: start;
+  padding: 6px 12px;
+  background-color: #d9534f;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.selected-transformer button.danger-btn:hover {
+  background-color: #c9302c;
+  transform: translateY(-1px);
+}
+
+/* === SEARCH BAR === */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-select,
+.search-input {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
